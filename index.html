@@ -75,7 +75,7 @@ button.key { appearance: none; }
 .key.hot { background: var(--accent); color: var(--on-accent); border-color: var(--accent-2); box-shadow: inset 0 -2px 0 #444; }
 .key:active, .key.pressed { transform: translateY(1px); box-shadow: inset 0 -1px 0 var(--line-strong); }
 
-.btn { display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 20px; border-radius: 11px; font: 600 15px/1 var(--body); text-decoration: none; border: 1px solid var(--line-strong); background: var(--panel); color: var(--fg); cursor: pointer; transition: background .15s, border-color .15s; }
+.btn { display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 20px; border-radius: 11px; white-space: nowrap; font: 600 15px/1 var(--body); text-decoration: none; border: 1px solid var(--line-strong); background: var(--panel); color: var(--fg); cursor: pointer; transition: background .15s, border-color .15s; }
 .btn:hover { background: var(--panel-2); border-color: var(--muted); }
 .btn.primary { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
 .btn.primary:hover { background: #2b2b2b; border-color: #2b2b2b; }
@@ -307,7 +307,7 @@ footer .about img { height: 22px; width: auto; }
       <a href="#privacy">Privacy</a>
       <a href="https://github.com/thefullctx/handover">GitHub</a>
     </nav>
-    <a class="btn primary" href="https://github.com/thefullctx/handover/releases/latest">Download for Mac</a>
+    <a class="btn primary" href="https://github.com/thefullctx/handover/releases/download/v0.1.0/Handover-0.1.0-macOS-universal.zip" data-download>Download for Mac</a>
   </div>
 </header>
 
@@ -320,7 +320,7 @@ footer .about img { height: 22px; width: auto; }
       <h1>See something.<br>One hotkey.<br><span class="hl">The right agent.</span></h1>
       <p class="lead">Handover sits between you and the AI agents you already run. Press a key, pick the agent that is already working, and keep chatting. It is not another agent.</p>
       <div class="ctas">
-        <a class="btn primary" href="https://github.com/thefullctx/handover/releases/latest">
+        <a class="btn primary" href="https://github.com/thefullctx/handover/releases/download/v0.1.0/Handover-0.1.0-macOS-universal.zip" data-download>
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.1 5.8c.6-.8 1.1-1.8 1-2.8-.9 0-2 .6-2.7 1.4-.6.7-1.1 1.7-1 2.7 1 .1 2.1-.5 2.7-1.3z"/></svg>
           Download for Mac
         </a>
@@ -574,7 +574,7 @@ footer .about img { height: 22px; width: auto; }
       <span class="label">Install</span>
       <h2>Two minutes to the first handoff.</h2>
       <p>One universal download for Apple silicon and Intel. On Linux, build from source.</p>
-      <div><a class="btn primary" href="https://github.com/thefullctx/handover/releases/latest">Download for Mac</a></div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px"><a class="btn primary" href="https://github.com/thefullctx/handover/releases/download/v0.1.0/Handover-0.1.0-macOS-universal.zip" data-download>Download for Mac</a><span class="mono" id="release-info" style="color:var(--muted)">v0.1.0 · 13.4 MB · zip</span></div>
     </div>
     <div style="display:grid;gap:14px;min-width:0">
       <ol class="steps">
@@ -598,7 +598,7 @@ cd ../src-tauri &amp;&amp; ../ui/node_modules/.bin/tauri build</pre>
   <div class="wrap closing">
     <h2>Hand off the next error you see.</h2>
     <div class="ctas">
-      <a class="btn primary" href="https://github.com/thefullctx/handover/releases/latest">Download for Mac</a>
+      <a class="btn primary" href="https://github.com/thefullctx/handover/releases/download/v0.1.0/Handover-0.1.0-macOS-universal.zip" data-download>Download for Mac</a>
       <a class="btn" href="https://github.com/thefullctx/handover">Read the code on GitHub</a>
     </div>
     <div class="passline" aria-hidden="true"><i></i></div>
@@ -613,7 +613,7 @@ cd ../src-tauri &amp;&amp; ../ui/node_modules/.bin/tauri build</pre>
       <img src="assets/handover-lockup.svg" alt="Handover" width="108" height="22">
       <p>A community project, MIT-licensed and open to contributors.</p>
     </div>
-    <div><h4>Product</h4><ul><li><a href="https://github.com/thefullctx/handover/releases/latest">Download</a></li><li><a href="#how">How it works</a></li><li><a href="#agents">Agents</a></li></ul></div>
+    <div><h4>Product</h4><ul><li><a href="https://github.com/thefullctx/handover/releases/download/v0.1.0/Handover-0.1.0-macOS-universal.zip" data-download>Download</a></li><li><a href="#how">How it works</a></li><li><a href="#agents">Agents</a></li></ul></div>
     <div><h4>Docs</h4><ul><li><a href="https://github.com/thefullctx/handover/blob/main/docs/usage.md">Using the palette</a></li><li><a href="https://github.com/thefullctx/handover/blob/main/docs/sessions.md">Sessions &amp; approvals</a></li><li><a href="https://github.com/thefullctx/handover/blob/main/docs/privacy.md">Privacy</a></li></ul></div>
     <div><h4>Open source</h4><ul><li><a href="https://github.com/thefullctx/handover">GitHub</a></li><li><a href="https://github.com/thefullctx/handover/blob/main/CONTRIBUTING.md">Contributing</a></li><li><a href="https://github.com/thefullctx/handover/issues/new">Report a bug</a></li></ul></div>
   </div>
@@ -911,6 +911,19 @@ cd ../src-tauri &amp;&amp; ../ui/node_modules/.bin/tauri build</pre>
   });
 
   setCoach();
+
+  // Downloads: links start at a known release so they work without JS; this
+  // swaps in the newest release's macOS zip, so new releases need no edit.
+  fetch("https://api.github.com/repos/thefullctx/handover/releases/latest", { headers: { Accept: "application/vnd.github+json" } })
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+    .then((rel) => {
+      const zip = (rel.assets || []).find((a) => /macos.*\.zip$/i.test(a.name));
+      if (!zip) return;
+      document.querySelectorAll("[data-download]").forEach((a) => { a.href = zip.browser_download_url; });
+      const info = $("#release-info");
+      if (info) info.textContent = `${rel.tag_name} · ${(zip.size / 1e6).toFixed(1)} MB · zip`;
+    })
+    .catch(() => {});
 })();
 </script>
 </body>
